@@ -10,17 +10,9 @@ const MainContainer = () => {
     const movies = useSelector(store => store.movies?.nowPlayingMovies)
     
 
-    // if (!movies?.length) return (
-
-    //     <div className="w-screen aspect-video">
-    //         <img className="w-screen aspect-video object-cover" 
-    //              src="/src/Utils/Logo.png"
-    //              alt="Loading..." />
-    //     </div>
-    // );
 
     if (!movies)return;
-    const mainMovies = movies[0];
+    const mainMovies = movies[4];
     const {original_title,overview,id} = mainMovies;
     
   return (

@@ -8,8 +8,13 @@ const SecondaryContainer = () => {
   if (!movies) return null;
 
   return (
-    <div>
+    <div className=' bg-black'>
+      <div className='-mt-40 relative z-20 pl-12'>
       <MovieList title={"Now Playing"} movies={movies} />
+      <MovieList title={"Trending"} movies={movies} />
+      <MovieList title={"Popular"} movies={movies} />
+      <MovieList title={"Upcoming Movies"} movies={movies} />
+    </div>
     </div>
   )
  }
